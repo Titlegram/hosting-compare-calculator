@@ -41,6 +41,39 @@
       }
     ]
   },
+  "titlegram": {
+    "name": "Titlegram",
+    "color": "#7209B7",
+    "plans": [
+      {
+        "name": "Pro",
+        "price": "$19/month",
+        "maxPdfs": 100,
+        "maxFileSize": 100,
+        "maxPages": null,
+        "adFree": true,
+        "features": "100 PDFs • Up to 100MB"
+      },
+      {
+        "name": "Growth",
+        "price": "$49/month",
+        "maxPdfs": 250,
+        "maxFileSize": 100,
+        "maxPages": null,
+        "adFree": true,
+        "features": "250 PDFs • Up to 100MB"
+      },
+      {
+        "name": "Business",
+        "price": "$99/month",
+        "maxPdfs": 1000,
+        "maxFileSize": 100,
+        "maxPages": null,
+        "adFree": true,
+        "features": "1,000 PDFs • Up to 100MB"
+      }
+    ]
+  },
   "flipsnack": {
     "name": "Flipsnack",
     "color": "#2E86AB",
@@ -188,39 +221,6 @@
         "maxPages": null,
         "adFree": true,
         "features": "200 publications • Unlimited file size • Team accounts • Priority support"
-      }
-    ]
-  },
-  "titlegram": {
-    "name": "Titlegram",
-    "color": "#7209B7",
-    "plans": [
-      {
-        "name": "Pro",
-        "price": "$19/month",
-        "maxPdfs": 100,
-        "maxFileSize": 100,
-        "maxPages": null,
-        "adFree": true,
-        "features": "100 PDFs • Up to 100MB"
-      },
-      {
-        "name": "Growth",
-        "price": "$49/month",
-        "maxPdfs": 250,
-        "maxFileSize": 100,
-        "maxPages": null,
-        "adFree": true,
-        "features": "250 PDFs • Up to 100MB"
-      },
-      {
-        "name": "Business",
-        "price": "$99/month",
-        "maxPdfs": 1000,
-        "maxFileSize": 100,
-        "maxPages": null,
-        "adFree": true,
-        "features": "1,000 PDFs • Up to 100MB"
       }
     ]
   }

@@ -1,13 +1,23 @@
 // Global variable to store pricing data
 let pricingData = {};
 
-function getFileSizeLimit(sizeCategory) {
-    const limits = {
-        'small': 10,
-        'medium': 50,
-        'large': 100
+// Convert user input categories to numeric values
+function getUserFileSize(sizeCategory) {
+    const mapping = {
+        'small': 10,   // Up to 10MB
+        'medium': 50,  // 10-50MB  
+        'large': 100   // 50MB+ (we'll use 100 as comparison point)
     };
-    return limits[sizeCategory] || 0;
+    return mapping[sizeCategory] || 0;
+}
+
+function getUserPageCount(pageCategory) {
+    const mapping = {
+        'small': 10,   // 1-10 pages
+        'medium': 100, // 11-100 pages
+        'large': 500   // More than 100 pages (we'll use 500 as comparison point)
+    };
+    return mapping[pageCategory] || 0;
 }
 
 function renderAllPlans() {
@@ -48,33 +58,33 @@ function renderAllPlans() {
 }
 
 function checkPlanMatch(plan, userInputs) {
-    const pdfCountMatch = plan.maxPdfs >= userInputs.pdfCount;
-    const fileSizeMatch = getFileSizeLimit(plan.maxFileSize) >= getFileSizeLimit(userInputs.fileSize);
+    // Check PDF count (null means unlimited)
+    const pdfCountMatch = plan.maxPdfs === null || plan.maxPdfs >= userInputs.pdfCount;
+    
+    // Check file size (null means unlimited)
+    const fileSizeMatch = plan.maxFileSize === null || plan.maxFileSize >= userInputs.fileSize;
+    
+    // Check page count (null means unlimited)
+    const pageCountMatch = plan.maxPages === null || plan.maxPages >= userInputs.pageCount;
+    
+    // Check ad-free requirement
     const adFreeMatch = userInputs.adFree ? plan.adFree : true;
     
-    let pageSizeMatch = false;
-    if (userInputs.pageCount === 'small' && (plan.maxPages === 'small' || plan.maxPages === 'medium' || plan.maxPages === 'large')) {
-        pageSizeMatch = true;
-    } else if (userInputs.pageCount === 'medium' && (plan.maxPages === 'medium' || plan.maxPages === 'large')) {
-        pageSizeMatch = true;
-    } else if (userInputs.pageCount === 'large' && plan.maxPages === 'large') {
-        pageSizeMatch = true;
-    }
-    
-    return pdfCountMatch && fileSizeMatch && pageSizeMatch && adFreeMatch;
+    return pdfCountMatch && fileSizeMatch && pageCountMatch && adFreeMatch;
 }
 
 function renderResults() {
     const pdfCount = parseInt(document.getElementById('pdfCount').value) || 1;
-    const fileSize = document.getElementById('fileSize').value;
-    const pageCount = document.getElementById('pageCount').value;
+    const fileSizeCategory = document.getElementById('fileSize').value;
+    const pageCountCategory = document.getElementById('pageCount').value;
     const adFree = document.getElementById('adFree').checked;
     
+    // Convert user input categories to numeric values
     const userInputs = {
-        pdfCount,
-        fileSize,
-        pageCount,
-        adFree
+        pdfCount: pdfCount,
+        fileSize: getUserFileSize(fileSizeCategory),
+        pageCount: getUserPageCount(pageCountCategory),
+        adFree: adFree
     };
     
     const resultsSection = document.getElementById('resultsSection');

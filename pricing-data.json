@@ -6,38 +6,38 @@
       {
         "name": "Free",
         "price": "$0/month",
-        "maxPdfs": 10,
-        "maxFileSize": "small",
-        "maxPages": "medium",
+        "maxPdfs": 5,
+        "maxFileSize": 50,
+        "maxPages": 10,
         "adFree": false,
-        "features": "10 publications • Up to 10MB per file • Basic analytics • Issuu branding"
+        "features": "5 published docs • Up to 50MB & 10 pages per doc"
       },
       {
         "name": "Starter",
-        "price": "$19/month",
-        "maxPdfs": 25,
-        "maxFileSize": "medium",
-        "maxPages": "large",
+        "price": "$28/month",
+        "maxPdfs": null,
+        "maxFileSize": 100,
+        "maxPages": 500,
         "adFree": true,
-        "features": "25 publications • Up to 50MB per file • Custom branding • Advanced analytics"
+        "features": "Unlimited published docs • Up to 100MB & 500 pages per doc"
       },
       {
-        "name": "Premium",
-        "price": "$39/month",
-        "maxPdfs": 100,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "name": "Unlimited",
+        "price": "$269/month",
+        "maxPdfs": null,
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
-        "features": "100 publications • Up to 100MB per file • Lead generation • Priority support"
+        "features": "Unlimited docs"
       },
       {
-        "name": "Optimum",
-        "price": "$99/month",
-        "maxPdfs": 500,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "name": "Issuu for Teams",
+        "price": "$595/month",
+        "maxPdfs": null,
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
-        "features": "500 publications • Unlimited file size • Team collaboration • White label"
+        "features": "Unlimited docs"
       }
     ]
   },
@@ -49,8 +49,8 @@
         "name": "Free",
         "price": "$0/month",
         "maxPdfs": 5,
-        "maxFileSize": "small",
-        "maxPages": "small",
+        "maxFileSize": 10,
+        "maxPages": 10,
         "adFree": false,
         "features": "5 flipbooks • Up to 10MB • 10 pages max • Flipsnack watermark"
       },
@@ -58,8 +58,8 @@
         "name": "Starter",
         "price": "$14/month",
         "maxPdfs": 15,
-        "maxFileSize": "medium",
-        "maxPages": "medium",
+        "maxFileSize": 50,
+        "maxPages": 100,
         "adFree": true,
         "features": "15 flipbooks • Up to 50MB • 100 pages max • Remove watermark"
       },
@@ -67,8 +67,8 @@
         "name": "Professional",
         "price": "$29/month",
         "maxPdfs": 50,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": 100,
+        "maxPages": null,
         "adFree": true,
         "features": "50 flipbooks • Up to 100MB • Unlimited pages • Custom domain"
       },
@@ -76,8 +76,8 @@
         "name": "Business",
         "price": "$59/month",
         "maxPdfs": 200,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
         "features": "200 flipbooks • Unlimited file size • Team accounts • Advanced analytics"
       }
@@ -91,8 +91,8 @@
         "name": "Free",
         "price": "$0/month",
         "maxPdfs": 3,
-        "maxFileSize": "small",
-        "maxPages": "medium",
+        "maxFileSize": 10,
+        "maxPages": 100,
         "adFree": false,
         "features": "3 flipbooks • Up to 10MB • 100 pages max • Heyzine branding"
       },
@@ -100,8 +100,8 @@
         "name": "Basic",
         "price": "$12/month",
         "maxPdfs": 20,
-        "maxFileSize": "medium",
-        "maxPages": "large",
+        "maxFileSize": 30,
+        "maxPages": null,
         "adFree": true,
         "features": "20 flipbooks • Up to 30MB • Unlimited pages • Remove branding"
       },
@@ -109,17 +109,17 @@
         "name": "Pro",
         "price": "$24/month",
         "maxPdfs": 100,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": 100,
+        "maxPages": null,
         "adFree": true,
         "features": "100 flipbooks • Up to 100MB • Custom domain • Lead generation"
       },
       {
         "name": "Premium",
         "price": "$48/month",
-        "maxPdfs": 500,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxPdfs": null,
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
         "features": "500 flipbooks • Unlimited file size • Team collaboration • Priority support"
       }
@@ -133,8 +133,8 @@
         "name": "Solo",
         "price": "$14/month",
         "maxPdfs": 5,
-        "maxFileSize": "medium",
-        "maxPages": "large",
+        "maxFileSize": 50,
+        "maxPages": null,
         "adFree": true,
         "features": "5 flipbooks • Up to 50MB • Unlimited pages • Custom branding"
       },
@@ -142,17 +142,17 @@
         "name": "Corporate",
         "price": "$49/month",
         "maxPdfs": 50,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": 200,
+        "maxPages": null,
         "adFree": true,
         "features": "50 flipbooks • Up to 200MB • Team accounts • Advanced security"
       },
       {
         "name": "Enterprise",
         "price": "$149/month",
-        "maxPdfs": 500,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxPdfs": null,
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
         "features": "500 flipbooks • Unlimited file size • White label • API access"
       }
@@ -166,8 +166,8 @@
         "name": "Personal",
         "price": "$19/month",
         "maxPdfs": 10,
-        "maxFileSize": "medium",
-        "maxPages": "large",
+        "maxFileSize": 50,
+        "maxPages": null,
         "adFree": true,
         "features": "10 publications • Up to 50MB • Unlimited pages • Basic analytics"
       },
@@ -175,8 +175,8 @@
         "name": "Professional",
         "price": "$49/month",
         "maxPdfs": 50,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": 100,
+        "maxPages": null,
         "adFree": true,
         "features": "50 publications • Up to 100MB • Custom domain • Advanced features"
       },
@@ -184,8 +184,8 @@
         "name": "Business",
         "price": "$99/month",
         "maxPdfs": 200,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxFileSize": null,
+        "maxPages": null,
         "adFree": true,
         "features": "200 publications • Unlimited file size • Team accounts • Priority support"
       }
@@ -196,40 +196,31 @@
     "color": "#7209B7",
     "plans": [
       {
-        "name": "Free",
-        "price": "$0/month",
-        "maxPdfs": 5,
-        "maxFileSize": "small",
-        "maxPages": "medium",
-        "adFree": false,
-        "features": "5 flipbooks • Up to 10MB • 100 pages max • Titlegram watermark"
-      },
-      {
-        "name": "Basic",
-        "price": "$9/month",
-        "maxPdfs": 15,
-        "maxFileSize": "medium",
-        "maxPages": "large",
-        "adFree": true,
-        "features": "15 flipbooks • Up to 30MB • Unlimited pages • Remove watermark"
-      },
-      {
         "name": "Pro",
         "price": "$19/month",
-        "maxPdfs": 50,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "maxPdfs": 100,
+        "maxFileSize": 100,
+        "maxPages": null,
         "adFree": true,
-        "features": "50 flipbooks • Up to 80MB • Custom branding • Analytics"
+        "features": "100 PDFs • Up to 100MB"
+      },
+      {
+        "name": "Growth",
+        "price": "$49/month",
+        "maxPdfs": 250,
+        "maxFileSize": 100,
+        "maxPages": null,
+        "adFree": true,
+        "features": "250 PDFs • Up to 100MB"
       },
       {
         "name": "Business",
-        "price": "$39/month",
-        "maxPdfs": 200,
-        "maxFileSize": "large",
-        "maxPages": "large",
+        "price": "$99/month",
+        "maxPdfs": 1000,
+        "maxFileSize": 100,
+        "maxPages": null,
         "adFree": true,
-        "features": "200 flipbooks • Unlimited file size • Team accounts • API access"
+        "features": "1,000 PDFs • Up to 100MB"
       }
     ]
   }

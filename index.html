@@ -9,40 +9,68 @@
 <body>
     <div class="calculator-container">
         <div class="input-section">
-            <div class="input-grid">
-                <div class="input-group">
-                    <label for="pdfCount">Number of PDFs</label>
-                    <input type="number" id="pdfCount" min="1" value="1" placeholder="Enter number of PDFs">
-                </div>
-                
-                <div class="input-group">
-                    <label for="fileSize">PDF File Size</label>
-                    <select id="fileSize">
-                        <option value="small">Up to 10MB</option>
-                        <option value="medium">10-50MB</option>
-                        <option value="large">50MB+</option>
-                    </select>
-                </div>
-                
-                <div class="input-group">
-                    <label for="pageCount">Number of Pages per PDF</label>
-                    <select id="pageCount">
-                        <option value="small">1-10 pages</option>
-                        <option value="medium">11-100 pages</option>
-                        <option value="large">More than 100 pages</option>
-                    </select>
-                </div>
-                
-                <div class="input-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="adFree"> Ad-free experience
-                    </label>
+            <!-- Row 1: Number of PDFs with slider and input -->
+            <div class="input-row">
+                <label class="row-label">Number of PDFs</label>
+                <div class="pdf-count-controls">
+                    <input type="number" id="pdfCount" min="1" max="1000" value="10" class="pdf-input">
+                    <div class="slider-container">
+                        <input type="range" id="pdfSlider" min="1" max="1000" value="10" class="pdf-slider">
+                        <div class="slider-labels">
+                            <span>1</span>
+                            <span>500</span>
+                            <span>1000+</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="button-section">
+            <!-- Row 2: PDF File Size -->
+            <div class="input-row">
+                <label class="row-label">PDF File Size</label>
+                <div class="button-group">
+                    <input type="radio" id="fileSize-small" name="fileSize" value="small" checked>
+                    <label for="fileSize-small" class="button-option">Up to 10MB</label>
+                    
+                    <input type="radio" id="fileSize-medium" name="fileSize" value="medium">
+                    <label for="fileSize-medium" class="button-option">10-50MB</label>
+                    
+                    <input type="radio" id="fileSize-large" name="fileSize" value="large">
+                    <label for="fileSize-large" class="button-option">50MB+</label>
+                </div>
+            </div>
+            
+            <!-- Row 3: Number of Pages -->
+            <div class="input-row">
+                <label class="row-label">Number of Pages per PDF</label>
+                <div class="button-group">
+                    <input type="radio" id="pageCount-small" name="pageCount" value="small" checked>
+                    <label for="pageCount-small" class="button-option">1-10 pages</label>
+                    
+                    <input type="radio" id="pageCount-medium" name="pageCount" value="medium">
+                    <label for="pageCount-medium" class="button-option">11-100 pages</label>
+                    
+                    <input type="radio" id="pageCount-large" name="pageCount" value="large">
+                    <label for="pageCount-large" class="button-option">100+ pages</label>
+                </div>
+            </div>
+            
+            <!-- Row 4: Ad-free Experience -->
+            <div class="input-row">
+                <label class="row-label">Experience Type</label>
+                <div class="button-group">
+                    <input type="radio" id="adFree-no" name="adFree" value="false" checked>
+                    <label for="adFree-no" class="button-option">Free (with ads)</label>
+                    
+                    <input type="radio" id="adFree-yes" name="adFree" value="true">
+                    <label for="adFree-yes" class="button-option">Ad-free</label>
+                </div>
+            </div>
+            
+            <!-- Row 5: Calculate Button -->
+            <div class="input-row">
                 <button type="button" id="calculateBtn" class="calculate-btn">
-                    Calculate Plans
+                    Calculate Best Plans
                 </button>
             </div>
         </div>

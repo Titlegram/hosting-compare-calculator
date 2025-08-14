@@ -75,9 +75,9 @@ function checkPlanMatch(plan, userInputs) {
 
 function renderResults() {
     const pdfCount = parseInt(document.getElementById('pdfCount').value) || 1;
-    const fileSizeCategory = document.getElementById('fileSize').value;
-    const pageCountCategory = document.getElementById('pageCount').value;
-    const adFree = document.getElementById('adFree').checked;
+    const fileSizeCategory = document.querySelector('input[name="fileSize"]:checked').value;
+    const pageCountCategory = document.querySelector('input[name="pageCount"]:checked').value;
+    const adFree = document.querySelector('input[name="adFree"]:checked').value === 'true';
     
     // Convert user input categories to numeric values
     const userInputs = {
@@ -167,6 +167,18 @@ async function initCalculator() {
         console.error('Failed to load pricing data');
         return;
     }
+    
+    // Sync slider and input field
+    const pdfSlider = document.getElementById('pdfSlider');
+    const pdfInput = document.getElementById('pdfCount');
+    
+    pdfSlider.addEventListener('input', function() {
+        pdfInput.value = this.value;
+    });
+    
+    pdfInput.addEventListener('input', function() {
+        pdfSlider.value = this.value;
+    });
     
     // Event listener - only button triggers calculation
     document.getElementById('calculateBtn').addEventListener('click', renderResults);

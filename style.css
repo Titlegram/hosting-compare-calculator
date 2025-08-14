@@ -165,12 +165,11 @@ body {
     background: #6b7280;
     border-color: #6b7280;
     color: white;
-    box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
 }
 
 /* Row 5: Calculate Button */
 .calculate-btn {
-    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
     color: white;
     border: none;
     padding: 12px 32px;
@@ -180,13 +179,13 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     width: 100%;
-    box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
 }
 
 .calculate-btn:hover {
-    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+    background: linear-gradient(135deg, #3730a3 0%, #312e81 100%);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.4);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
 }
 
 .calculate-btn:active {

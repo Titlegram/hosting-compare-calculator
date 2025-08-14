@@ -6,7 +6,8 @@ function getUserFileSize(sizeCategory) {
     const mapping = {
         'small': 10,   // Up to 10MB
         'medium': 50,  // 10-50MB  
-        'large': 100   // 50MB+ (we'll use 100 as comparison point)
+        'large': 100,  // 50-100MB
+        'xlarge': 200  // 100MB+ (we'll use 200 as comparison point)
     };
     return mapping[sizeCategory] || 0;
 }

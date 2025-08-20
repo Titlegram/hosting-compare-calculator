@@ -139,7 +139,7 @@ function renderResults() {
                 learnMoreBtn.className = 'learn-more-btn';
                 learnMoreBtn.textContent = 'Learn More';
                 learnMoreBtn.addEventListener('click', () => {
-                    window.open('https://titlegram.com', '_blank');
+                    window.open('https://titlegram.com/pricing', '_blank');
                 });
                 planItem.appendChild(learnMoreBtn);
             }

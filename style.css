@@ -192,32 +192,35 @@ body {
     transform: translateY(0);
 }
 
-/* Results Section - Updated Design */
+/* Results Section - Updated Design with Boxes */
 .results-section {
     display: flex;
     flex-direction: column;
 }
 
 .platform-card {
-    padding: 0;
-    margin-bottom: 40px;
+    background: #f8f9fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 80px;
     position: relative;
 }
 
 .platform-card:not(:last-child)::after {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 0;
-    right: 0;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     height: 1px;
-    background: #e5e7eb;
+    background: #d1d5db;
 }
 
 .platform-header {
     background: transparent;
     padding: 0 0 16px 0;
-    margin-bottom: 16px;
 }
 
 .platform-name {
@@ -227,7 +230,7 @@ body {
     color: #1f2937;
 }
 
-/* Plans Container - Now directly on background */
+/* Plans Container */
 .plans-container {
     padding: 0;
     display: flex;
@@ -236,7 +239,7 @@ body {
 }
 
 .plan-item {
-    background: #f9fafb;
+    background: white;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 16px;
@@ -369,6 +372,14 @@ body {
     
     .plan-item {
         min-width: auto;
+    }
+    
+    .platform-card {
+        margin-bottom: 60px;
+    }
+    
+    .platform-card:not(:last-child)::after {
+        bottom: -30px;
     }
 }
 

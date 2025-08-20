@@ -192,38 +192,44 @@ body {
     transform: translateY(0);
 }
 
-/* Results Section */
+/* Results Section - Updated Design */
 .results-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .platform-card {
-    background: white;
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    padding: 0;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.platform-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e5e7eb;
 }
 
 .platform-header {
-    background: #4f46e5;
-    color: white;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
+    background: transparent;
+    padding: 0 0 16px 0;
+    margin-bottom: 16px;
 }
 
 .platform-name {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0;
+    color: #1f2937;
 }
 
-/* Plans Container */
+/* Plans Container - Now directly on background */
 .plans-container {
-    padding: 20px;
+    padding: 0;
     display: flex;
     gap: 16px;
     overflow-x: auto;
@@ -239,10 +245,16 @@ body {
     min-width: 200px;
 }
 
+.plan-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 .plan-item.highlighted {
     background: #eff6ff;
     border-color: #3b82f6;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
 }
 
 .plan-item.highlighted::before {
@@ -324,6 +336,10 @@ body {
     .slider-container {
         max-width: none;
         width: 100%;
+    }
+    
+    .platform-name {
+        font-size: 20px;
     }
     
     .plans-container {

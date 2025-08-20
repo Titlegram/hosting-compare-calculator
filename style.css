@@ -231,10 +231,10 @@ body {
 
 /* Plans Container */
 .plans-container {
-    padding: 0;
+    padding: 4px 0 4px 0;
     display: flex;
     gap: 16px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 
 .plan-item {

@@ -33,7 +33,10 @@ function renderAllPlans() {
         
         const platformHeader = document.createElement('div');
         platformHeader.className = 'platform-header';
-        platformHeader.innerHTML = `<h3 class="platform-name">${platform.name}</h3>`;
+        platformHeader.innerHTML = `
+            <h3 class="platform-name">${platform.name}</h3>
+            <p class="platform-description">${platform.description}</p>
+        `;
         
         const plansContainer = document.createElement('div');
         plansContainer.className = 'plans-container';
@@ -98,7 +101,10 @@ function renderResults() {
         
         const platformHeader = document.createElement('div');
         platformHeader.className = 'platform-header';
-        platformHeader.innerHTML = `<h3 class="platform-name">${platform.name}</h3>`;
+        platformHeader.innerHTML = `
+            <h3 class="platform-name">${platform.name}</h3>
+            <p class="platform-description">${platform.description}</p>
+        `;
         
         const plansContainer = document.createElement('div');
         plansContainer.className = 'plans-container';

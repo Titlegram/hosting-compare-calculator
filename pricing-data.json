@@ -1,7 +1,7 @@
 {
   "issuu": {
     "name": "Issuu",
-    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
+    "description": "Free plan available. PDF to flipbook software, with advanced features like cross platform content promotion, and digital content sales.",
     "color": "#FF6B35",
     "plans": [
       {
@@ -35,7 +35,7 @@
   },
   "titlegram": {
     "name": "Titlegram",
-    "description": "Tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
+    "description": "Start from $19/m for 100 PDFs. Platform to turn your PDF into webpages with your own branded short link. Doesn't support flipbook experience.",
     "color": "#7209B7",
     "plans": [
       {
@@ -69,7 +69,7 @@
   },
   "flipsnack": {
     "name": "Flipsnack",
-    "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+    "description": "Start from $16/m for 5 flipbooks. Advanced digital flipbook maker.",
     "color": "#2E86AB",
     "plans": [
       {
@@ -103,7 +103,7 @@
   },
   "heyzine": {
     "name": "Heyzine",
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+    "description": "Free plan available for 5 free flipbooks. Ad-free PDF to flipbook maker.",
     "color": "#A23B72",
     "plans": [
       {
@@ -146,7 +146,7 @@
   },
   "flippingbook": {
     "name": "FlippingBook",
-    "description": "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.",
+    "description": "Start from $20/m for 3 flipbooks. PDF to digital flipbook maker.",
     "color": "#F18F01",
     "plans": [
       {

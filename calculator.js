@@ -127,6 +127,17 @@ function renderResults() {
                 <div class="plan-features">${plan.features}</div>
             `;
             
+            // Add "Learn More" button for highlighted Titlegram plans
+            if (index === highlightedPlanIndex && platformKey === 'titlegram') {
+                const learnMoreBtn = document.createElement('button');
+                learnMoreBtn.className = 'learn-more-btn';
+                learnMoreBtn.textContent = 'Learn More';
+                learnMoreBtn.addEventListener('click', () => {
+                    window.open('https://titlegram.com', '_blank');
+                });
+                planItem.appendChild(learnMoreBtn);
+            }
+            
             plansContainer.appendChild(planItem);
         });
         

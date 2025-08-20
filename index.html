@@ -84,5 +84,21 @@
     </div>
 
     <script src="calculator.js"></script>
+
+    <script>
+      function sendHeight() {
+        const height = document.documentElement.scrollHeight;
+        parent.postMessage({ type: "setHeight", height: height }, "*");
+      }
+    
+      // Send height on load and whenever window resizes
+      window.addEventListener("load", sendHeight);
+      window.addEventListener("resize", sendHeight);
+    
+      // Optional: send periodically in case content changes dynamically
+      setInterval(sendHeight, 500);
+    </script>
+
+    
 </body>
 </html>

@@ -1,6 +1,7 @@
 {
   "issuu": {
     "name": "Issuu",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.",
     "color": "#FF6B35",
     "plans": [
       {
@@ -34,6 +35,7 @@
   },
   "titlegram": {
     "name": "Titlegram",
+    "description": "Tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
     "color": "#7209B7",
     "plans": [
       {
@@ -67,6 +69,7 @@
   },
   "flipsnack": {
     "name": "Flipsnack",
+    "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
     "color": "#2E86AB",
     "plans": [
       {
@@ -100,6 +103,7 @@
   },
   "heyzine": {
     "name": "Heyzine",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
     "color": "#A23B72",
     "plans": [
       {
@@ -142,6 +146,7 @@
   },
   "flippingbook": {
     "name": "FlippingBook",
+    "description": "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.",
     "color": "#F18F01",
     "plans": [
       {

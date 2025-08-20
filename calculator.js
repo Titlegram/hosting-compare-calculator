@@ -33,7 +33,6 @@ function renderAllPlans() {
         
         const platformHeader = document.createElement('div');
         platformHeader.className = 'platform-header';
-        platformHeader.style.backgroundColor = platform.color;
         platformHeader.innerHTML = `<h3 class="platform-name">${platform.name}</h3>`;
         
         const plansContainer = document.createElement('div');
@@ -99,7 +98,6 @@ function renderResults() {
         
         const platformHeader = document.createElement('div');
         platformHeader.className = 'platform-header';
-        platformHeader.style.backgroundColor = platform.color;
         platformHeader.innerHTML = `<h3 class="platform-name">${platform.name}</h3>`;
         
         const plansContainer = document.createElement('div');
